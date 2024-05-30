@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Navigation with Theme Toggle</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span>&lt;/&gt; Manav's portfolio</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Us</a>
+            <div class="toggle-switch">
+                <label class="switch-label">
+                    <input type="checkbox" class="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="cursor"></div>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+    <div class="sidebar" id="sidebar">
+        <div class="toggle-switch">
+            <label class="switch-label">
+                <input type="checkbox" class="checkbox" id="sidebar-theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Us</a>
+        <br>
+        <div class="card">
+            <span>Social</span>
+            <a class="social-link" href="https://www.facebook.com/profile.php?id=100086146520494&mibextid=ZbWKwL">
+                <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z" />
+                </svg>
+            </a>
+            <a class="social-link" href="https://github.com/manav0704-coder">
+                <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                    <title>github [#142]</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs>
+
+                    </defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path
+                                    d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                    id="github-[#142]">
+
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a class="social-link" href="https://www.instagram.com/mr._manav._17?igsh=N2Z1NnhqY3hic2sy">
+                <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                    <title>instagram [#167]</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs>
+
+                    </defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#000000">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path
+                                    d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                                    id="instagram-[#167]">
+
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/manav-pardeshi-he-him-455702236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                        fill="#0F0F0F" />
+                    <path
+                        d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
+                        fill="#0F0F0F" />
+                    <path
+                        d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
+                        fill="#0F0F0F" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                        fill="#0F0F0F" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Introduction Section  start-->
+    <section class="introduction" id="home">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Hi, I am <span class="namehead">Manav Pardeshi</span></h2>
+                    <h2>I am a Passionate </h2>
+                    <b><span id="element"></span></b>
+                    <br>
+                    <a href="/images/Resume (2).pdf " class="btn" download style="text-decoration: none; background-color: #8B93FF;" data-theme="light">
+                        <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1"
+                            class="sparkle">
+                            <path
+                                d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z">
+                            </path>
+                        </svg>
+                        <span class="text" style="color: #FFFFFF;">Download Resume</span>
+                    </a>
+
+
+                    <!-- <p>Web Developer, UI/UX Developer, Full Stack Developer</p> -->
+                </div>
+                <div class="intro-img">
+                    <img src="/images/blog.jpg" alt="Your Image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About us section start -->
+    <section class="about-me" id="about">
+        <div class="container">
+            <h1 class="text-center fw-bold"><u>About Me</u></h1>
+            <!-- <div class="h-line"></div> -->
+            <p class="text-center mt-2">I Am a Passionate Web Developer</p>
+            <div class="qualification">
+                <div class="bg-white shadow">
+                    <div class="content">
+                        <p class="text-center p-4">I am Manav Pardeshi, a Web developer focused on creating attractive
+                            and excellent Websites. I have been having interest in Coding, I enjoy creating simple and
+                            unique designs.</p>
+                        <blockquote class="quote text-center mt-4">
+                            "In the digital realm, we are not merely creating websites and applications; we are crafting
+                            immersive experiences, bridging the gap between imagination and reality. Our dedication lies
+                            in translating visions into digital masterpieces that resonate with users, leaving a lasting
+                            impression in the ever-evolving landscape of technology."
+                        </blockquote>
+                        <cite class="author text-center mt-2">
+                            <p align="right"> ~ Alex Thompson</p>
+                        </cite>
+                        <div class="skill-progress mt-4">
+                            <div class="row">
+                                <div class="col-6 p-4">
+                                    <p>HTML/CSS</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 p-4">
+                                    <p>JavaScript</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 p-4">
+                                    <p>Bootstrap</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 p-4">
+                                    <p>jQuery</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 p-4">
+                                    <p>Wordpress</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 p-4">
+                                    <p>Node.js</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 p-4">
+                                    <p>C/C++</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-secondary" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 p-4">
+                                    <p>AI (Artificial Intelligence)</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education section  -->
+
+    <section class="qualifications" id="qualifications">
+        <h1 class="text-center fw-bold"><u>My Qualification</u></h1>
+        <div class="education">
+            <div class="educard">
+                <svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                    stroke-width="3" stroke="#000000" fill="none">
+                    <polygon points="46.73 53.68 16.58 53.68 16.58 22.74 31.65 10.74 46.73 22.74 46.73 53.68"
+                        stroke-linecap="round" />
+                    <polyline points="25.76 53.68 25.76 42.03 37.55 42.03 37.55 53.68" stroke-linecap="round" />
+                    <circle cx="31.65" cy="26.65" r="4.23" stroke-linecap="round" />
+                    <polyline points="16.58 53.68 9.49 53.68 9.49 31.48 16.58 31.48" stroke-linecap="round" />
+                    <polyline points="46.73 31.48 54.51 31.48 54.51 53.68 46.73 53.68" stroke-linecap="round" />
+                </svg>
+
+                <div class="educard__content">
+                    <p class="educard__title">Schooling Years</p>
+                    <p class="educard__description">"Kendriya Vidyalaya (2010 - 2020)
+                        I completed my schooling at Kendriya Vidyalaya, a prestigious CBSE board school, achieving
+                        80.80% in my 10th grade. My education here laid a strong foundation for my academic and personal
+                        growth."
+
+                    </p>
+                </div>
+            </div>
+            <div class="educard">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 506 506" xml:space="preserve">
+                    <circle style="fill:#324A5E;" cx="253" cy="253" r="253" />
+                    <rect x="136.5" y="216.5" style="fill:#6F7B84;" width="233" height="178.3" />
+                    <rect x="361.1" y="226.6" style="fill:#E6E9EE;" width="19.7" height="163" />
+                    <g>
+                        <rect x="356.4" y="226.6" style="fill:#ACB3BA;" width="29" height="18.3" />
+                        <rect x="356.4" y="371.3" style="fill:#ACB3BA;" width="29" height="18.3" />
+                    </g>
+                    <rect x="282.5" y="226.6" style="fill:#E6E9EE;" width="19.7" height="163" />
+                    <g>
+                        <rect x="277.8" y="226.6" style="fill:#ACB3BA;" width="29" height="18.3" />
+                        <rect x="277.8" y="371.3" style="fill:#ACB3BA;" width="29" height="18.3" />
+                    </g>
+                    <rect x="203.9" y="226.6" style="fill:#E6E9EE;" width="19.7" height="163" />
+                    <g>
+                        <rect x="199.2" y="226.6" style="fill:#ACB3BA;" width="29" height="18.3" />
+                        <rect x="199.2" y="371.3" style="fill:#ACB3BA;" width="29" height="18.3" />
+                    </g>
+                    <rect x="125.2" y="226.6" style="fill:#E6E9EE;" width="19.7" height="163" />
+                    <g>
+                        <rect x="120.6" y="226.6" style="fill:#ACB3BA;" width="29" height="18.3" />
+                        <rect x="120.6" y="371.3" style="fill:#ACB3BA;" width="29" height="18.3" />
+                    </g>
+                    <polygon style="fill:#E6E9EE;" points="253,94.9 94.9,226.6 411.1,226.6 " />
+                    <polygon style="fill:#ACB3BA;" points="138.6,210.8 253,115.5 367.4,210.8 " />
+                    <circle style="fill:#E6E9EE;" cx="253" cy="173.2" r="27" />
+                    <rect x="94.9" y="389.5" style="fill:#2B3B4E;" width="316.3" height="21.6" />
+                    <rect x="234.8" y="322.2" style="fill:#324A5E;" width="40.6" height="67.4" />
+                </svg>
+                <div class="educard__content">
+                    <p class="educard__title">Senior Secondary</p>
+                    <p class="educard__description">"Studied Commerce at Ness Wadia College, achieving 66.67% in the
+                        12th standard. Developed a strong foundation in business studies and commerce-related subjects
+                        during these formative years."</p>
+                </div>
+            </div>
+            <div class="educard">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M21 10L12 5L3 10L6 11.6667M21 10L18 11.6667M21 10V10C21.6129 10.3064 22 10.9328 22 11.618V16.9998M6 11.6667L12 15L18 11.6667M6 11.6667V17.6667L12 21L18 17.6667L18 11.6667"
+                        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <div class="educard__content">
+                    <p class="educard__title">College Degree Pursuit</p>
+                    <p class="educard__description">
+                        "Currently pursuing a BBA in Computer Application at Pratibha College, diving deep into tech
+                        stacks like HTML, CSS, and JavaScript,Nodejs. Maintaining an impressive GPA of 9.57, with a
+                        focus on
+                        practical application and real-world projects."</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- education section ends  -->
+
+    <!-- project section starts  -->
+
+    <section id="project-section">
+        <h1 class="text-center fw-bold" id="projects"><u>My Projects</u></h1>
+        <div class="card-container">
+            <div class="project-card">
+                <div class="image-container">
+                    <a href="/main project/public/index.html"><img
+                            src="/images/Suprema - Multipurpose eCommerce Theme.jpg" alt="Project Image"
+                            class="blurred-image"></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="image-container">
+                    <a href="/wedding-photographer/index.html"><img src="/images/creatink-photo-website-template.jpg"
+                            alt="Project Image" class="blurred-image"></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="image-container">
+                    <a href="/manav/Gym.html"><img src="/images/GymLife-1-768x605.jpg" alt="Project Image"
+                            class="blurred-image"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project section ends  -->
+
+    <!-- Contact me section start  -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="3c23fc6f-f051-4330-b8ef-8006580c6eeb">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="btn-submit">
+                    Send Message
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </form>
+            <div class="additional-content">
+                <p>
+                    Feel free to reach out to me for any inquiries, collaborations, or just to say hello! I'm always
+                    open to new opportunities and connections.
+                </p><br>
+                <div class="social-icons">
+                    <!-- Instagram -->
+                    <a href="#">
+                        <div class="tooltip-container">
+                            <div class="tooltip">
+                                <div class="profile">
+                                    <div class="user">
+                                        <div class="img">Ui</div>
+                                        <div class="details">
+                                            <div class="name">User</div>
+                                            <div class="username">mr._manav._17</div>
+                                        </div>
+                                    </div>
+                                    <div class="about">150+ Followers</div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a class="icon" href="https://www.instagram.com/mr._manav._17?igsh=N2Z1NnhqY3hic2sy">
+                                    <div class="layer">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="instagramSVG">
+                                            <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="text">Instagram</div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </a>
+                    <!-- Facebook -->
+                    <a href="#">
+                        <div class="tooltip-container">
+                            <div class="tooltip">
+                                <div class="profile">
+                                    <div class="user">
+                                        <div class="img">Fb</div>
+                                        <div class="details">
+                                            <div class="name">User</div>
+                                            <div class="username">manav pardeshi</div>
+                                        </div>
+                                    </div>
+                                    <div class="about">100+ Friends</div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a class="icon"
+                                    href="https://www.facebook.com/profile.php?id=100086146520494&mibextid=ZbWKwL">
+                                    <div class="layer">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="facebookSVG">
+                                            <svg viewBox="0 0 40 40" xml:space="preserve"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                    gradientTransform="matrix(40 0 0 -39.7778 11115.001 16212.334)"
+                                                    y2="407.5726" y1="406.6018" x2="-277.375" x1="-277.375" id="a">
+                                                    <stop stop-color="#0062e0" offset="0"></stop>
+                                                    <stop stop-color="#19afff" offset="1"></stop>
+                                                </linearGradient>
+                                                <path
+                                                    d="M16.7 39.8C7.2 38.1 0 29.9 0 20 0 9 9 0 20 0s20 9 20 20c0 9.9-7.2 18.1-16.7 19.8l-1.1-.9h-4.4l-1.1.9z"
+                                                    fill="url(#a)"></path>
+                                                <path
+                                                    d="m27.8 25.6.9-5.6h-5.3v-3.9c0-1.6.6-2.8 3-2.8H29V8.2c-1.4-.2-3-.4-4.4-.4-4.6 0-7.8 2.8-7.8 7.8V20h-5v5.6h5v14.1c1.1.2 2.2.3 3.3.3 1.1 0 2.2-.1 3.3-.3V25.6h4.4z"
+                                                    fill="#fff"></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="text">Facebook</div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </a>
+                    <!-- GitHub -->
+                    <a href="#">
+                        <div class="tooltip-container">
+                            <div class="tooltip">
+                                <div class="profile">
+                                    <div class="user">
+                                        <div class="img">Gid</div>
+                                        <div class="details">
+                                            <div class="name">User</div>
+                                            <div class="username">manav-coder0704</div>
+                                        </div>
+                                    </div>
+                                    <div class="about">4+ Projects</div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a class="icon" href="https://github.com/manav0704-coder">
+                                    <div class="layer">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="facebookSVG">
+                                            <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                                                <title>github [#142]</title>
+                                                <desc>Created with Sketch.</desc>
+                                                <defs>
+
+                                                </defs>
+                                                <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                    fill-rule="evenodd">
+                                                    <g id="Dribbble-Light-Preview"
+                                                        transform="translate(-140.000000, -7559.000000)" fill="#000000">
+                                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                            <path
+                                                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                                                id="github-[#142]">
+
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="text">Facebook</div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </a>
+                    <!-- linkedin -->
+                    <a href="#">
+                        <div class="tooltip-container">
+                            <div class="tooltip">
+                                <div class="profile">
+                                    <div class="user">
+                                        <div class="img">Ui</div>
+                                        <div class="details">
+                                            <div class="name">User</div>
+                                            <div class="username">Manav Pardeshi</div>
+                                        </div>
+                                    </div>
+                                    <div class="about">1000+ Connections</div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <a class="icon"
+                                    href="https://www.linkedin.com/in/manav-pardeshi-he-him-455702236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                    <div class="layer">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span class="fab fa-linkedin">
+                                            <svg viewBox="0 0 448 512" height="1em">
+                                                <path
+                                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="text">LinkedIn</div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- footer start here -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>About Me</h4>
+                <p>"Experienced web developer and UI/UX designer, specializing in creating sleek and user-friendly
+                    digital experiences. As a passionate freelancer, I bring creativity and technical expertise to every
+                    project, ensuring client satisfaction and exceeding expectations. Let's collaborate to bring your
+                    ideas to life!"</p>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Me</h4>
+                <ul>
+                    <li>Email: 521manavpardeshi253@gmail.com</li>
+                    <li>Phone: 935-601-3449</li>
+                    <li>Address: Pune, Maharashtra </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear"></span> Manav Pardeshi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+
+
+    <!-- footer ends -->
+    <div id="custom-cursor"></div>
+
+</body>
+<script src="/js/main.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer', 'UI Designer', 'Freelancer'],
+        typeSpeed: 80,
+    });
+</script>
+
+</html>

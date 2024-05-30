@@ -1,0 +1,193 @@
+.maincategory{
+    display: inline-flex;
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+.maincategory h2{
+    
+    text-align: center;
+}
+.text{
+    text-decoration: none;
+    color: black;
+}
+
+.product-card {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%; /* Make the card circular */
+    background-image: url(/public/assets/images/mens-banner.jpg);
+    background-size: cover; /* Cover the entire card with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 30px; */
+   
+}
+.product-card2{
+    width: 220px;
+    height: 200px;
+    border-radius: 50%; /* Make the card circular */
+    background-image: url(/public/assets/images/products/jewellery-1.jpg);
+    background-size: cover; /* Cover the entire card with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+}
+.product-card3{
+    width: 220px;
+    height: 200px;
+    border-radius: 50%; /* Make the card circular */
+    background-image: url(/public/assets/images/products/electronic.jpg);
+    background-size: cover; /* Cover the entire card with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+}
+.product-card4{
+    width: 220px;
+    height: 200px;
+    border-radius: 50%; /* Make the card circular */
+    background-image: url(/public/assets/images/discount1.jpg);
+    background-size: cover; /* Cover the entire card with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+}
+.product-card5{
+    width: 220px;
+    height: 200px;
+    border-radius: 50%; /* Make the card circular */
+    background-image: url(/public/assets/images/products/hotoffer.jpg);
+    background-size: cover; /* Cover the entire card with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+}
+.product-card6 {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%; /* Make the card circular */
+    background-image: url(/public/assets/images/products/menswear.jpg);
+    background-size: cover; /* Cover the entire card with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 30px; */
+}
+.product-card7 {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%; /* Make the card circular */
+    background-image: url(/public/assets/images/products/womensbanner.jpg);
+    background-size: cover; /* Cover the entire card with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 30px; */
+}
+.product-card8 {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%; /* Make the card circular */
+    background-image: url(/public/assets/images/products/2ndelect.jpg);
+    background-size: cover; /* Cover the entire card with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 30px; */
+}
+.product-card9 {
+    width: 220px;
+    height: 200px;
+    border-radius: 50%; /* Make the card circular */
+    background-image: url(/public/assets/images/products/homeicon.jpg);
+    background-size: cover; /* Cover the entire card with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 30px; */
+}
+.product-card10{
+    width: 220px;
+    height: 200px;
+    border-radius: 50%; /* Make the card circular */
+    background-image: url(/public/assets/images/products/hotdeal.jpg);
+    background-size: cover; /* Cover the entire card with the image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 30px; */
+}
+.product-details {
+    text-align: center;
+    color: #fff; /* Set text color to white so it's visible on top of the image */
+}
+
+.product-details h2,
+.product-details p {
+    margin: 5px 0;
+}
+
+.product-details button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-details button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 915px){
+    .product-card {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; /* Make the card circular */
+        background-image: url(/public/assets/images/mens-banner.jpg);
+        background-size: cover; /* Cover the entire card with the image */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent image repetition */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        /* padding-left: 30px; */
+       
+    }
+    
+}

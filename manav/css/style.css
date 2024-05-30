@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+/* 
+display: block
+display: inline
+display: inline-block
+display: flex
+*/
+.running-header{
+    background-color: #009FBD;
+    color: white;
+    font-size: smaller;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.running-header > h1{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.header{
+    background-color: #210062;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.navbar{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+/* .navbar .nav-list{
+
+} */
+.navbar li{
+    float:left;
+    list-style:none;
+    margin:13px 20px;
+}
+.navbar li a{
+    padding:3px 3px;
+    color:white;
+    text-decoration: none;
+    letter-spacing: 2px;
+ }
+.search{
+   float:right;
+   color:white;
+   padding:12px 75px;
+}
+.navbar .search span{
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.navbar .search input{
+  border:2PX solid black;
+  padding:4px 10px;
+  width: 15rem;
+  outline: 0;
+  border: none;
+  border-radius: 3px;
+}
+
+.hero-image{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url("https://images.unsplash.com/photo-1579364046732-c21c2177730d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Z3ltJTIwbW90aXZhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60");
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: aliceblue;
+}
+#text{
+    width: 50%;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.curriculm{
+    margin: 3rem auto;
+    width: 80%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.curriculm h2{
+    text-decoration: none; 
+}
+.curriculm h2 span{
+    display: block;
+    margin-top: 10px;
+    color: red;
+}
+
+.curriculm .service{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sub-service{
+    width: 30%;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+.service-image img{
+    width: 80px;
+    height: auto;
+    padding: 10px;
+}
+.sub-service figure figcaption{
+    margin-top: 20px;
+}
+.sub-service figure figcaption h3{
+    color: #e36a6a;
+}
+.sub-service figure figcaption p{
+    margin-top: 10px;
+    text-align: left;
+    text-decoration: none;
+}
+.massIndex{
+    background-color: rgb(32, 17, 116);
+    color: #fff;
+    margin: 3rem 0rem;
+    padding: 30px;
+}
+.massHead{
+    text-align: center;
+}
+.massInput{
+    width: 27%;
+    margin: 30px auto 0;
+}
+
+.color{
+    background-color:red;
+}
+#image{
+   width:200px;
+}
+.gym{
+    width:400px;
+}
+.about{
+    width:100%;
+    height:400px;
+}
+.logo{
+    width:30px;
+}
+.log{
+    width:30px;
+    height:30px;
+}
+.heading{
+	float:right;
+	padding:10px;
+    background-color:blue;
+	text-align:center;
+}
+.sub-head{
+	 float:left;
+  padding:2%;
+  
+}	 	
+.end{
+	margin:7%;
+    text-align:center;
+    float:left;
+	padding:4%;
+}
+.classfour{
+	width:40px;
+}
+.suclass{
+     padding:10px;
+	 display:flex;
+	float:left;
+	letter-spacing:1px;
+	margin:20px;
+     width:20px;
+	 text-align:center;
+}
+.classone{
+	letter-spacing:1px;
+	margin-bottom:5px;
+	justify-content:evenly;
+	text-align:center;
+	padding:10px;
+}
+.classzone{
+	margin-bottom:10px;
+}

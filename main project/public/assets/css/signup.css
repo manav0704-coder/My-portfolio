@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(hsl(353, 100%, 78%), rgba(240, 7, 244, 0.7)), url('../images/home4.png');
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0,0, 0.1);
+}
+.main{
+    justify-content: center;
+    padding-top: 200px;
+}
+.wrapper .lab1{
+    font-size: 17px;
+    text-align: left;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2rem;
+    color: hsl(353, 100%, 78%);
+    margin-bottom: 1.2rem;
+}
+form input{
+    width: 92%;
+    outline: none;
+    border: 1px solid hsl(353, 100%, 78%);
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+
+}
+button{
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 92%;
+    background:#3498db;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(353, 100%, 78%);
+}
+button{
+    text-decoration: none;
+    color: white;
+}
+
+button a{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+    width: 50%;
+}
+
+input:focus{
+    border: 1px solid rgb(192, 192, 192);
+}
+.term{
+    margin-top: 0.2rem;
+}
+.term input{
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.term label{
+    font-size: 0.9rem;
+}
+.term a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+.member{
+    font-size: 0.9rem;
+    margin-top: 1.4rem;
+    color: #636363;
+}
+.member a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+.recover{
+    text-align: right;
+    font-size: 0.9rem;
+    margin: 0.3rem 1.4rem 0 0;
+}
+.recover a{
+    text-decoration: none;
+    color: #464647;
+}
+
+
